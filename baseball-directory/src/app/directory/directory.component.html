@@ -1,0 +1,27 @@
+<!--<p>-->
+  <!--directory works!-->
+<!--</p>-->
+
+<!--<p>Directory ID  :{{directoryId}}</p>-->
+
+<p *ngIf="showParagraph" [ngClass]="classes">Directory works!</p>
+
+<ul id="player_list">
+  <label>Search Term:</label>
+  <input [(ngModel)]="searchTerm" />
+  <br />
+  <li *ngFor="let player of players | filter:searchTerm">
+    {{player.name | uppercase}} &mdash; {{player.team}}
+  </li>
+</ul>
+<form id="add-player">
+  <label>Player Name</label>
+  <input name="playerName" [(ngModel)]="addPlayerName" />
+  <label>Player Team</label>
+  <input name="playerTeam" [(ngModel)]="addPlayerTeam" />
+  <button (click)="fbPostData(addPlayerName, addPlayerTeam)">Add Game</button>
+
+</form>
+
+
+

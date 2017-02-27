@@ -1,0 +1,16 @@
+<header>
+  <h1>{{title}}</h1>
+
+  <ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/directory">Directory</a></li>
+  </ul>
+
+</header>
+<section id="main">
+
+  <router-outlet></router-outlet>
+
+</section>
+
+<!--<app-home [topLevelPlayer]="player" (playerClicked)="onPlayerClick($event)">This is the inner HTML</app-home>-->

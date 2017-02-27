@@ -1,0 +1,5 @@
+[
+  { "name" : "Mike Trout", "team": "Angels" },
+  { "name" : "Chris Sale", "team" : "Red Sox" },
+  { "name" : "Josh Donaldson", "team" : "Blue Jays"}
+]
